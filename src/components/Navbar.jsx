@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [theme, setTheme] = useState("light");
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -18,10 +19,23 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      {/* Centered links */}
-      <div className="nav-links">
+      {/* Hamburger (mobile only) */}
+      <button
+        className="hamburger"
+        onClick={() => setOpen(!open)}
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
+
+      {/* Links */}
+      <div className={`nav-links ${open ? "open" : ""}`}>
         {sections.map(s => (
-          <a key={s.id} href={`#${s.id}`}>
+          <a
+            key={s.id}
+            href={`#${s.id}`}
+            onClick={() => setOpen(false)}
+          >
             {s.label}
           </a>
         ))}

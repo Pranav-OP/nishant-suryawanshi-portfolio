@@ -25,11 +25,9 @@ function App() {
     <>
       {/* Live Background */}
       <div className="background">
-        <span className="ribbon r1" />
-        <span className="ribbon r2" />
-        <span className="ribbon r3" />
-        <span className="ribbon r4" />
-        <span className="ribbon r5" />
+        <span className="orb o1" />
+        <span className="orb o2" />
+        <span className="orb o3" />
       </div>
 
       <Navbar />
