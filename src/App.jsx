@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./styles/global.css";
 
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
@@ -25,16 +24,15 @@ function App() {
   return (
     <>
       {/* Live Background */}
-      {/* <div className="background">
+      <div className="background">
         <span className="ribbon r1" />
         <span className="ribbon r2" />
         <span className="ribbon r3" />
         <span className="ribbon r4" />
         <span className="ribbon r5" />
-      </div> */}
+      </div>
 
       <Navbar />
-      <Header />
 
       <Hero data={data} />
       <Experience experience={data.experience} />
