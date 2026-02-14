@@ -1,6 +1,8 @@
+import useFadeIn from "../hooks/useFadeIn";
 export default function Section({ title, items, list }) {
+  const ref = useFadeIn();
   return (
-    <section>
+    <section ref={ref} className="fade-section">
       <h2>{title}</h2>
       {items &&
         items.map((item, i) => (

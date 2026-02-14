@@ -1,6 +1,8 @@
+import useFadeIn from "../hooks/useFadeIn";
 export default function Skills({ skills }) {
+  const ref = useFadeIn();
   return (
-    <section>
+    <section id="skills" ref={ref} className="fade-section">
       <h2>Technical Skills</h2>
 
       {Object.entries(skills).map(([category, items]) => (

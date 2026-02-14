@@ -10,7 +10,7 @@
 }
 
 [data-theme="dark"] {
-  --bg: #020617;
+  --bg: #010827;
   --text: #e5e7eb;
   --muted: #94a3b8;
   --accent: #60a5fa;
@@ -102,4 +102,156 @@ ul {
 
 li {
   margin-bottom: 0.4rem;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  gap: 1.2rem;
+  padding: 0.9rem 1.5rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid var(--border);
+}
+
+[data-theme="dark"] .navbar {
+  background: rgba(2, 6, 23, 0.7);
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: var(--muted);
+  position: relative;
+}
+
+.navbar a:hover {
+  color: var(--accent);
+}
+
+
+/* Animation styles */
+.fade-section {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Resume CTA Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.resume-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Background Live Ribbons */
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ribbon {
+  position: absolute;
+  width: 420px;
+  height: 3px;
+  opacity: 0.25;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  filter: blur(0.2px);
+}
+
+/* Individual ribbons */
+.r1 {
+  top: 20%;
+  left: -30%;
+  animation: move-right 18s linear infinite;
+}
+
+.r2 {
+  top: 40%;
+  right: -30%;
+  animation: move-left 22s linear infinite;
+}
+
+.r3 {
+  top: 65%;
+  left: -40%;
+  animation: move-diagonal-up 26s linear infinite;
+}
+
+.r4 {
+  top: 75%;
+  right: -40%;
+  animation: move-diagonal-down 30s linear infinite;
+}
+
+.r5 {
+  top: 50%;
+  left: -50%;
+  animation: move-right 35s linear infinite;
+  opacity: 0.15;
+}
+
+/* Animations */
+@keyframes move-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(160vw);
+  }
+}
+
+@keyframes move-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-160vw);
+  }
+}
+
+@keyframes move-diagonal-up {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(160vw, -40vh);
+  }
+}
+
+@keyframes move-diagonal-down {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-160vw, 40vh);
+  }
 }

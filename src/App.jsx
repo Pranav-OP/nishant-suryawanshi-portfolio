@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import "./styles/global.css";
+
+import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
 import Skills from "./components/Skills";
-import Section from "./components/Section";
+import Certifications from "./components/Certifications";
+import Languages from "./components/Languages";
 import Footer from "./components/Footer";
 
 function App() {
@@ -20,13 +24,25 @@ function App() {
 
   return (
     <>
+      {/* Live Background */}
+      {/* <div className="background">
+        <span className="ribbon r1" />
+        <span className="ribbon r2" />
+        <span className="ribbon r3" />
+        <span className="ribbon r4" />
+        <span className="ribbon r5" />
+      </div> */}
+
+      <Navbar />
       <Header />
+
       <Hero data={data} />
       <Experience experience={data.experience} />
-      <Section title="Education" items={data.education} />
+      <Education education={data.education} />
       <Skills skills={data.skills} />
-      <Section title="Certifications" list={data.certifications} />
-      <Section title="Languages" list={data.languages} />
+      <Certifications certifications={data.certifications} />
+      <Languages languages={data.languages} />
+
       <Footer />
     </>
   );
