@@ -1,18 +1,131 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, minimal, and fully responsive **single-page portfolio website** built with React.  
+The website is designed to be clean, fast, and professional, with subtle animations and an ambient background to make it feel alive without being distracting.
 
-Currently, two official plugins are available:
+This portfolio is ideal for **Data Analysts, IT Professionals, and Engineers** looking to showcase their profile online.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
+- **React (Vite)** – Fast development and optimized production build
+- **JavaScript (ES6+)**
+- **CSS (Vanilla CSS)** – No heavy UI frameworks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Styling & UI
+- **CSS Variables** – Theme-aware design (Light/Dark mode)
+- **Google Fonts (Inter)** – Clean, modern typography
+- **Responsive Design** – Mobile-first approach
+- **react-icons** – Lightweight social media icons
+
+### Animations & Effects
+- **Intersection Observer API** – Fade-in animations on scroll
+- **Pure CSS Animations** – Ambient floating background
+- **CSS Transitions** – Hover and interaction effects
+
+### Data Handling
+- **Static JSON (`data.json`)** – Resume data stored locally
+- **No Backend / No Database**
+
+### Deployment
+- **Vercel / Netlify (Free Hosting)**
+
+---
+
+## ✨ Features
+
+### 🌗 Light & Dark Mode
+- Toggle available directly in the navigation bar
+- Theme-aware colors across the entire site
+
+### 🧭 Sticky Navigation Bar
+- Center-aligned navigation links
+- Hamburger menu on mobile devices
+- Smooth scrolling between sections
+
+### 🎯 Resume-Driven Content
+All content is dynamically loaded from a single `data.json` file:
+- Hero / Introduction
+- Experience
+- Education
+- Technical Skills
+- Certifications
+- Language Proficiency
+
+### 📄 Resume Download CTA
+- Downloadable PDF resume directly from the hero section
+
+### 🧠 Skills Showcase
+- Categorized skill sections
+- Individual skill cards
+- Hover and motion effects
+- Mobile-friendly grid layout
+
+### 🎬 Subtle Scroll Animations
+- Sections fade in as they enter the viewport
+- Lightweight and performance-friendly
+
+### 🌌 Live Ambient Background
+- Floating, blurred orbs for a calm and modern feel
+- Responsive sizing for mobile devices
+- Pure CSS (no canvas, SVGs, or heavy libraries)
+
+### 🔗 Social Media Footer
+- LinkedIn, Instagram, Twitter icons
+- Minimal hover animations
+- Theme-aware styling
+
+### 📱 Fully Responsive
+- Optimized for desktop, tablet, and mobile
+- Adaptive navigation and background effects
+
+---
+
+## 📁 Project Structure
+
+src/
+├── components/
+│ ├── Navbar.jsx
+│ ├── Hero.jsx
+│ ├── Experience.jsx
+│ ├── Education.jsx
+│ ├── Skills.jsx
+│ ├── Certifications.jsx
+│ ├── Languages.jsx
+│ └── Footer.jsx
+│
+├── hooks/
+│ └── useFadeIn.js
+│
+├── styles/
+│ └── global.css
+│
+├── App.jsx
+└── main.jsx
+
+## 🧪 Getting Started Locally
+
+### Prerequisites
+- Node.js installed
+
+### Installation
+```bash
+npm install
+```
+
+### Run Development Server
+```bash
+npm run dev
+```
+
+### Build for Production
+```bash
+npm npm run build
+```
+
