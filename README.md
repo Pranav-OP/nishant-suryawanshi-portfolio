@@ -89,6 +89,7 @@ All content is dynamically loaded from a single `data.json` file:
 
 ## 📁 Project Structure
 
+```
 src/
 ├── components/
 │ ├── Navbar.jsx
@@ -108,6 +109,7 @@ src/
 │
 ├── App.jsx
 └── main.jsx
+```
 
 ## 🧪 Getting Started Locally
 
