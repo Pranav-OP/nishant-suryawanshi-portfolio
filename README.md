@@ -8,7 +8,6 @@ This portfolio is ideal for **Data Analysts, IT Professionals, and Engineers** l
 ---
 
 ## 🚀 Live Demo
-https://nishantsuryawanshicv.netlify.app/
 [https://nishantsuryawanshicv.netlify.app/]([https://markdownlivepreview.com/](https://nishantsuryawanshicv.netlify.app/)).
 ---
 
