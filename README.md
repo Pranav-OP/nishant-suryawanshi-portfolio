@@ -8,7 +8,8 @@ This portfolio is ideal for **Data Analysts, IT Professionals, and Engineers** l
 ---
 
 ## 🚀 Live Demo
-
+https://nishantsuryawanshicv.netlify.app/
+[https://nishantsuryawanshicv.netlify.app/]([https://markdownlivepreview.com/](https://nishantsuryawanshicv.netlify.app/)).
 ---
 
 ## 🛠 Tech Stack
@@ -131,3 +132,23 @@ npm run dev
 npm npm run build
 ```
 
+## Adding & Pushing latest changes 
+### Check the current status
+```
+git status
+```
+
+### Add updated files 
+```
+git add [filename]
+```
+
+### Commit the files 
+```
+git commit -m "updated footer link"
+```
+
+### Push the code to the remote repo
+```
+git push -u origin main -f
+```
