@@ -23,7 +23,7 @@ export default function Footer() {
         </a>
 
         <a
-          href="https://twitter.com/PronubOP"
+          href="https://twitter.com/Nishant41265604"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
