@@ -42,7 +42,7 @@
   ],
 
   "skills": {
-    "Analytics & BI": ["Power BI", "SQL Server", "Excel"],
+    "Analytics & BI": ["Power BI", "Tableau", "SQL Server", "Excel"],
     "Programming": ["Python", "C", "C++", "DSA", "OOPS"],
     "IT & Tools": ["ServiceNow", "Windows Server", "Active Directory", "Linux"],
     "Networking": ["DWDM Transport Network", "Networking Fundamentals"]
